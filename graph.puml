@@ -1,0 +1,14 @@
+@startuml
+left to right direction
+skinparam actorStyle awesome
+actor Admin as g
+
+package Portal_ODK {
+  usecase "Add student" as UC1
+  usecase "delete student" as UC2
+  usecase "modify student info" as UC3
+}
+g --> UC1
+g --> UC2
+g --> UC3
+@enduml
