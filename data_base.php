@@ -30,7 +30,7 @@ if (isset($_POST['submit'])) {
     } else {
         echo "Error " . "<br>";
     }
-    header("Location: " . $_SERVER['PHP_SELF']);
+    header("Location: index.php");
     exit();
 }
 
@@ -58,3 +58,4 @@ foreach ($datas as $data) {
 $jsonResponse = json_encode($response);
 header('Content-Type: application/json');
 echo $jsonResponse;
+?>

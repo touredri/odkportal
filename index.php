@@ -5,9 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/3b9cd09213.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="details_popup.css">
     <title>Portal</title>
 </head>
-
+<?php
+//include  "data_base.php";
+//require('data_base.php');
+?>
 <body>
     <nav>
         <div class="logo">
@@ -44,11 +48,8 @@
         </section>
     </div>
 
-    <div class="modal_container" id="modal_container">
-        <div class="modal_content">
-            
-            
-        </div>
+    <div class="modal_container show" id="modal_container">
+
     </div>
 <footer>
         <div class="footer">
@@ -60,7 +61,8 @@
                 <a href="#">LOGIN</a>
             </div>
         </div>
-    <script src="./details_popup.js"></script>
+
     <script src="./index.js"></script>
+    <script src="./details_popup.js"></script>
 </body>
 </html>

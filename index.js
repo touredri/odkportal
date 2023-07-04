@@ -11,15 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
         modal.className = 'modal_';
     });
 
-    function addPromotion() {
-        let add_promotion_place = document.querySelector('.add_promotion_place');
-        let add_promotion = document.createElement('input');
-        add_promotion.type = 'text';
-        add_promotion.placeholder = 'Nom de la promotion';
-        add_promotion.name = 'new_promotion[]';
-        add_promotion_place.appendChild(add_promotion);
-    }
- let option_table = ['P1', 'P2', 'P3'];
+ let option_table = ['P1', 'P2', 'P3', 'P4'];
 
     let add_std = document.createElement('div');
     add_std.className = 'add_student';
@@ -30,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
     registration.id = 'registration-form';
     registration.className = 'registration-form'
     registration.method = 'Post';
-    registration.action = 'index.php';
+    registration.action = 'data_base.php';
     registration.setAttribute('enctype', 'multipart/form-data');
     registration.innerHTML = `
         <div class="form-part">

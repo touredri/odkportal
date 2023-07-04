@@ -1,0 +1,85 @@
+.modal_container {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.modal_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(9, 9, 9, 0.56);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+}
+
+.popup_modal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(237, 237, 237, 0.95);
+    width: 80%;
+}
+
+.modal_img img {
+    width: 150px;
+    height: 150px;
+}
+
+.modal_details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+.modal_config {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 6px;
+    padding: 5px;
+}
+
+.modal_config button,
+.edit_form_config button {
+    border: transparent 1px solid;
+    border-radius: 5px;
+    padding: 5px;
+    height: 35px;
+    cursor: pointer;
+}
+.edit {
+    background-color: #292D32;
+    color: #ffffff;
+}
+.edit:hover {
+    background-color: #141514;
+    transition: ease-in-out 0.3s;
+}
+
+.delete {
+    background-color: #FF4E4E;
+    color: #292D32;
+}
+.delete:hover {
+    background-color: #FF0000;
+    transition: ease-in-out 0.3s;
+}
+
+.close_modal {
+    background-color: #8B8C8E;
+    color: #ffffff;
+}
+
+.edit_form_config {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
