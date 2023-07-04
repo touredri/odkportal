@@ -1,0 +1,277 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+nav {
+    background-color: white;
+    display: flex;
+    padding: 1% 3%;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #c9c9c9;
+}
+
+nav .links a {
+    color: black;
+    text-decoration: none;
+    margin-right: 10px;
+    font-size: 1.3rem;
+}
+
+.links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.links img {
+    width: 30px;
+    height: 60px;
+    color: red;
+}
+
+.logo {
+    max-width: 50%;
+}
+
+nav .logo img {
+    width: 100%;
+    height: 80px;
+}
+
+.header_photo {
+    width: 80%;
+}
+
+.hd {
+    width: 100%;
+}
+
+.btns {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+
+}
+
+.bt_hd {
+    text-align: center;
+    margin-top: 2px;
+    margin-bottom: 3px;
+    color: white;
+    background: #FF6501;
+    padding: 15px;
+    border: white 1px solid;
+    border-radius: 20px;
+}
+
+hr {
+    width: 100%;
+    height: 12px;
+    color: black;
+    margin-bottom: 40px;
+}
+
+.card_container {
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+
+}
+
+.card img {
+    width: 120px;
+    height: 120px;
+    position: relative;
+    align-self: center;
+    top: -40px;
+    border: #c9c9c9 1px solid;
+    border-radius: 40%;
+}
+
+.container_ {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border: transparent 1px solid ;
+    border-radius: 10px;
+    width: 150px;
+    background-color: #908D8D4A;
+    padding: 5px;
+    margin-bottom: 40px;
+    color: rgba(15, 15, 16, 0.73);
+}
+
+.card_container :hover {
+
+}
+
+.registration-form {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.form-part {
+    display: inline-block;
+    vertical-align: top;
+    width: 48%;
+    margin-right: 2%;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+.form-part:last-child {
+    margin-right: 0;
+}
+
+.form-part input[type="text"],
+.form-part input[type="number"],
+.form-part input[type="date"],
+.form-part input[type="email"],
+.form-part input[type="tel"],
+.form-part input[type="file"],
+.form-part > .promo{
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background: rgba(217, 217, 217, 0.90);
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.08);
+}
+
+.registration-form button[type="submit"] {
+    background-color: rgba(255, 101, 1, 0.66);
+    color: black;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 50%;
+}
+
+.registration-form button[type="submit"]:hover {
+    background-color: #ff6501;
+}
+
+.form-part input[type="file"] {
+    padding: 0;
+}
+
+.form-part input[type="file"]::-webkit-file-upload-button {
+    background-color: #ff6501;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.form-part input[type="file"]::-webkit-file-upload-button:hover {
+    background-color: #45a049;
+}
+
+.form {
+    width: 80%;
+}
+
+@media (max-width: 768px) {
+
+    .form-part {
+        width: 100%;
+        margin-right: 0;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #ccc;
+    }
+
+    .form-part:last-child {
+        margin-right: 0;
+    }
+}
+
+@media (min-width: 768px) {
+    .form-part input {
+        height: 60px;
+    }
+}
+
+/* Pop up form part */
+
+.modal_ {
+    position: absolute;
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(9, 9, 9, 0.66);
+    width: 100%;
+    height: 100%;
+    top: 0;
+}
+
+
+#modal {
+    position: fixed;
+}
+
+.add_student {
+    display: flex;
+    z-index: 6;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 90%;
+    margin-bottom: 6px;
+    margin-left: 10px;
+    padding: 5px;
+    color: white;
+}
+
+.add_new_promo {
+    background-color: #f3f6f3;
+    border: transparent 1px solid;
+    border-radius: 5px;
+    margin-left: 10px;
+    padding: 5px;
+    height: 35px;
+}
+
+.send_btn {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.add_promotion_place {
+    gap: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 10px;
+    padding: 5px;
+    color: white;
+}
+
+.add_new {
+    width: 80%;
+    height: 35px;
+    background-color: rgba(255, 101, 1, 0.66);
+    color: black;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
